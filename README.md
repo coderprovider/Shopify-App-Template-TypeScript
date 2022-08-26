@@ -8,6 +8,8 @@ It leverages the [Shopify API Library](https://github.com/Shopify/shopify-node-a
 
 The original template (with JavaScript) is [Shopify/shopify-app-template-node](https://github.com/Shopify/shopify-app-template-node) that is used when you create a new Node app with the [Shopify CLI](https://shopify.dev/apps/tools/cli).
 
+This is a minimalistic fork with **TypeScript** support.
+
 ## Requirements
 
 - If you don’t have one, [create a Shopify partner account](https://partners.shopify.com/signup).
@@ -44,15 +46,7 @@ cd shopify-app-ts && yarn
 
 _Note_: You could see error `fatal: not a git repository (or any of the parent directories): .git` that comes from `husky install` command. Once you do `git init`, it will disappear.
 
-4. Remove `.github` folder
-
-```sh
-rm -rf .github
-```
-
-It contains files from [original template](https://github.com/Shopify/shopify-app-template-node) that are not necessary when building an app.
-
-5. Run the app
+4. Run the app
 
 ```sh
 shopify app serve
@@ -69,6 +63,10 @@ So `Dockerfile` and `Docker Compose` with `https://` setup will be coming soon..
 ## Enhancements
 
 There are plans to create an advanced `shopify-app-starter` that will be powered by React Router, Mobx, a more opinionated structure, release-it, and other useful things.
+
+## Similar starters
+
+- [SaeedYasin/shopify-app-template](https://github.com/SaeedYasin/shopify-app-template) - fork from the current one + Prisma support added, and some other addons.
 
 ## Motivation
 
