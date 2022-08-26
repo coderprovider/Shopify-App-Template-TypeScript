@@ -16,6 +16,7 @@
     "test": "vitest --reporter=verbose"
   },
   "type": "module",
+  "license": "UNLICENSED",
   "engines": {
     "node": ">=16.13.0"
   },
@@ -55,6 +56,5 @@
     "shopify-embedded-app",
     "shopify-app-template",
     "shopify-app-typescript"
-  ],
-  "license": "MIT"
+  ]
 }
