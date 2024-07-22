@@ -54,6 +54,14 @@ export function userLoggedInFetch(app) {
   return async (uri, options?) => {
     const response = await fetchFunction(uri, options);
 
+    // const client = new ApolloClient({
+    //   cache: new InMemoryCache(),
+    //   link: new HttpLink({
+    //     credentials: "include",
+    //     fetch: userLoggedInFetch(app),
+    //   }),
+    // });
+
     if (
       response.headers.get("X-Shopify-API-Request-Failure-Reauthorize") === "1"
     ) {
